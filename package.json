@@ -1,0 +1,27 @@
+{
+  "name": "typescript-starter",
+  "version": "0.0.1",
+  "description": "Typescript starter",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build-ts && node .",
+    "build-ts": "npm run clean && tsc",
+    "clean": "rimraf dist",
+    "watch-ts": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["typescript"],
+  "author": "Eric Lara",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
