@@ -5,23 +5,41 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "npm run build-ts && node .",
+    "lint": "npm run build-ts && pretty-quick --staged && lint-staged",
+    "format": "prettier --write 'src/*.ts'",
     "build-ts": "npm run clean && tsc",
     "clean": "rimraf dist",
     "watch-ts": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["typescript"],
+  "keywords": [
+    "typescript"
+  ],
   "author": "Eric Lara",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.7.0",
     "@typescript-eslint/parser": "^3.7.0",
     "eslint": "^7.5.0",
     "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
     "rimraf": "^3.0.2",
     "typescript": "^3.9.7"
   },
   "dependencies": {
     "dotenv": "^8.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js}": "eslint --cache --fix"
   }
 }
