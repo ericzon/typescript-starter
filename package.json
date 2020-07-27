@@ -4,12 +4,12 @@
   "description": "Typescript starter",
   "main": "dist/index.js",
   "scripts": {
-    "start": "npm run build-ts && node .",
-    "lint": "npm run build-ts && pretty-quick --staged && lint-staged",
+    "start": "npm run build && node .",
+    "watch": "tsc -w",
+    "lint": "npm run build && pretty-quick --staged && lint-staged",
     "format": "prettier --write 'src/*.ts'",
-    "build-ts": "npm run clean && tsc",
+    "build": "npm run clean && tsc",
     "clean": "rimraf dist",
-    "watch-ts": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

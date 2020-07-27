@@ -1,5 +1,7 @@
-export class HelloClass {
-    sayHello(): void {
-        console.log('Hello World');
-    }
+class HelloClass {
+  static sayHello(): string {
+    return `Hello on ${new Date()} !`;
+  }
 }
+
+export default HelloClass;
