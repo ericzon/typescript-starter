@@ -18,6 +18,7 @@ More to come:
 
 - Automatic changelog
 - Tests setup
+- Checking of tests before push
   ...
 
 ## Installation
