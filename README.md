@@ -19,6 +19,7 @@ Main features:
 - Checking of tests before push
 
 More to come:
+
 ...
 
 ## Installation
@@ -41,4 +42,12 @@ You can refresh automatically the changes:
 
 ```
 npm run watch
+```
+
+## Testing
+
+We're using Jest:
+
+```
+npm t
 ```
