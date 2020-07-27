@@ -4,6 +4,7 @@
     const HelloClass = helloImport.default;
 
     console.log(HelloClass.sayHello());
+    console.log(HelloClass.fact(5));
   } else {
     console.log('hello not imported!');
   }
