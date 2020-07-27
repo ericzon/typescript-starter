@@ -10,7 +10,8 @@
     "format": "prettier --write 'src/*.ts'",
     "build": "npm run clean && tsc",
     "clean": "rimraf dist",
-    "test": "jest --collect-coverage --verbose src",
+    "test": "jest --verbose src",
+    "coverage": "jest --collect-coverage --verbose src",
     "release": "standard-version"
   },
   "keywords": [

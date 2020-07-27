@@ -6,7 +6,7 @@ My main objective on this repo is to have a clean base to start to code in Types
 
 Main features:
 
-- Target: es2020
+- Target: es2019
 - Eslint
 - Prettier
 - Checking on pre commit phase
@@ -15,12 +15,11 @@ Main features:
 - Checking format of commit messages
 - Automatic changelog
 - editorconfig
-
-More to come:
-
 - Tests setup
 - Checking of tests before push
-  ...
+
+More to come:
+...
 
 ## Installation
 
