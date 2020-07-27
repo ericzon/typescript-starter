@@ -1,6 +1,6 @@
 {
   "name": "typescript-starter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Typescript starter",
   "main": "dist/index.js",
   "scripts": {
