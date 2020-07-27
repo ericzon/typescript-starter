@@ -12,11 +12,11 @@ Main features:
 - Checking on pre commit phase
 - Dotenv
 - Watcher
+- Checking format of commit messages
 
 More to come:
 
 - Automatic changelog
-- Checking format of commit message
 - Tests setup
   ...
 
