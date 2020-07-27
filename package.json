@@ -4,7 +4,7 @@
   "description": "Typescript starter",
   "main": "dist/index.js",
   "scripts": {
-    "start": "npm run build && node .",
+    "start": "npm run build && node -r dotenv/config .",
     "watch": "tsc -w",
     "lint": "npm run build && pretty-quick --staged && lint-staged",
     "format": "prettier --write 'src/*.ts'",
@@ -34,6 +34,7 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
+    "@types/node": "^14.0.26",
     "dotenv": "^8.2.0"
   },
   "husky": {
