@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/ericzon/typescript-starter/compare/v0.0.1...v0.0.2) (2020-07-27)
+
+
+### Features
+
+* add jest/ts-jest and intial config ([cd8b668](https://github.com/ericzon/typescript-starter/commit/cd8b6681c3c8889b53035a77b7e1b1a954b3718d))
+* add optional chaining & nullish examples ([21cde4a](https://github.com/ericzon/typescript-starter/commit/21cde4ace6ed9aa6ea11ce84b41d5124f2eca14b))
+
+
+### Bug Fixes
+
+* change target version to work with latest feats ([a592e76](https://github.com/ericzon/typescript-starter/commit/a592e76e6ddd22e62b5e8b804d978245f584ecdb))
+* fix jest config src folder and added coverage report ([3f44671](https://github.com/ericzon/typescript-starter/commit/3f44671aaa266f574590cefe2357ea29dea68bbc))
+* merge with master ([9b96dd7](https://github.com/ericzon/typescript-starter/commit/9b96dd758303e2296ef09eb1fbd7cc119c638798))
+
 ### 0.0.1 (2020-07-27)
 
 ### Features

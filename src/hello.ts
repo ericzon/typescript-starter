@@ -14,7 +14,6 @@ class HelloClass {
   static getWeather() {
     const weatherOptions = ['sunny', 'rainy', 'cloudy'];
     const randomIndex = Math.floor(Math.random() * 10) % weatherOptions.length;
-
     return weatherOptions[randomIndex - 1];
   }
 }
