@@ -13,10 +13,11 @@ Main features:
 - Dotenv
 - Watcher
 - Checking format of commit messages
+- Automatic changelog
+- editorconfig
 
 More to come:
 
-- Automatic changelog
 - Tests setup
 - Checking of tests before push
   ...
