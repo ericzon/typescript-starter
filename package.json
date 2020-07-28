@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npm run build && node -r dotenv/config .",
     "watch": "tsc -w",
-    "lint": "npm run build && pretty-quick --staged && lint-staged",
+    "lint:staged": "npm run build && pretty-quick --staged && lint-staged",
+    "lint": "eslint 'src/*.ts'",
     "format": "prettier --write 'src/*.ts'",
     "build": "npm run clean && tsc",
     "clean": "rimraf dist",
@@ -47,7 +48,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run lint",
+      "pre-commit": "npm run lint:staged",
       "pre-push": "npm t"
     }
   },
