@@ -1,6 +1,6 @@
 {
   "name": "typescript-starter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Typescript starter",
   "main": "dist/index.js",
   "private": true,
@@ -15,7 +15,8 @@
     "clean": "rimraf dist",
     "test": "jest --verbose src",
     "coverage": "jest --collect-coverage --verbose src",
-    "release": "standard-version"
+    "release": "standard-version",
+    "secrets": "git secrets --scan"
   },
   "keywords": [
     "typescript",
