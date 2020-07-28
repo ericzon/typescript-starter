@@ -3,6 +3,8 @@
   "version": "0.0.2",
   "description": "Typescript starter",
   "main": "dist/index.js",
+  "private": true,
+  "license": "MIT",
   "scripts": {
     "start": "npm run build && node -r dotenv/config .",
     "watch": "tsc -w",
@@ -16,7 +18,8 @@
     "release": "standard-version"
   },
   "keywords": [
-    "typescript"
+    "typescript",
+    "starter"
   ],
   "author": "Eric Lara",
   "devDependencies": {
