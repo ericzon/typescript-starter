@@ -19,3 +19,7 @@ Feature: Simple maths
       | 100 |         5 |    105 |
       |  99 |      1234 |   1333 |
       |  12 |         5 |     17 |
+
+
+    Scenario: get json 
+        Given I get the json
