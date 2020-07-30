@@ -15,8 +15,7 @@
     "clean": "rimraf dist",
     "test": "jest --verbose src",
     "coverage": "jest --collect-coverage --verbose src",
-    "release": "standard-version",
-    "secrets": "git secrets --scan"
+    "release": "standard-version"
   },
   "keywords": [
     "typescript",

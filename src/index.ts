@@ -1,11 +1,11 @@
 const getRandomEvenOdd = () => new Date().getTime() % 2 === 0;
-
 (async () => {
   console.log(`env secret: ${process.env.SECRET}`);
   const helloImport = await import('./hello');
   const HelloClass = helloImport.default;
+  const helloInstance = new HelloClass();
 
-  console.log(HelloClass.sayHello());
+  console.log(helloInstance.sayHello());
   const weather = HelloClass.getWeather();
   const finalWeather = weather ?? 'no idea about the weather';
 

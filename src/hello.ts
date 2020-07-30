@@ -1,6 +1,8 @@
 class HelloClass {
-  static sayHello(): string {
-    return `Hello on ${new Date()} !`;
+  #greeting: string = 'Hello';
+
+  sayHello(): string {
+    return `${this.#greeting} on ${new Date()} !`;
   }
 
   static fact(n: number): number {
