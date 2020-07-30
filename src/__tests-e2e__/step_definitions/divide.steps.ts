@@ -1,7 +1,7 @@
 // features/support/steps.js
 import { expect } from "chai";
 import { Given, When, Then } from "cucumber";
-import { Calculator } from "../../src/calculator";
+import { Calculator } from "../support/calculator";
  
 Given("a calculator", function() {
     this.calculator = new Calculator()
