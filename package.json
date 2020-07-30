@@ -9,13 +9,14 @@
     "start": "npm run build && node -r dotenv/config .",
     "watch": "tsc -w",
     "lint:staged": "npm run build && pretty-quick --staged && lint-staged",
-    "lint": "eslint 'src/*.ts'",
-    "format": "prettier --write 'src/*.ts'",
+    "lint": "eslint 'src/**/*.ts'",
+    "format": "prettier --write 'src/**/*.ts'",
     "build": "npm run clean && tsc",
     "clean": "rimraf dist",
     "test": "jest --verbose src",
     "coverage": "jest --collect-coverage --verbose src",
-    "release": "standard-version"
+    "release": "standard-version",
+    "secrets": "git secrets --scan"
   },
   "keywords": [
     "typescript",
@@ -51,7 +52,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run lint:staged",
+      "pre-commit": "npm run lint:staged && npm run secrets",
       "pre-push": "npm t"
     }
   },
