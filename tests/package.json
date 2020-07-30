@@ -4,15 +4,16 @@
   "description": "integration tests",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "tsc && cucumber-js features/"
   },
   "author": "Lisandro Gurman",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^4.2.0",
-    "cucumber": "^6.0.5"
+    "@types/chai": "^4.2.12",
+    "@types/cucumber": "^6.0.1"
   },
   "dependencies": {
     "axios": "^0.16.2"
-  }
+  },
+  "build": "tsc"
 }
