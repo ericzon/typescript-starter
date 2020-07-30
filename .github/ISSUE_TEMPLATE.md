@@ -36,8 +36,8 @@ Tell us what failed or needs to be updated
 
 ### Steps to reproduce
 
-1. 2.
-
+1.
+2.
 3.
 
 ## Expected Behavior
