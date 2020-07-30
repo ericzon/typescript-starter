@@ -16,8 +16,7 @@
     "test": "jest --verbose src",
     "test:e2e": "tsc && ./node_modules/.bin/cucumber-js -p default",
     "coverage": "jest --collect-coverage --verbose src",
-    "release": "standard-version",
-    "secrets": "git secrets --scan"
+    "release": "standard-version"
   },
   "keywords": [
     "typescript",
