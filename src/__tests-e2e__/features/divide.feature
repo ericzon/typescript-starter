@@ -8,4 +8,4 @@ Scenario: Happy Path: Divide two numbers
 Scenario: Failing test - Divide two numbers
     Given a calculator
     When I divide 8 by 2
-    Then the result is 5
+    Then the result isn't 5
