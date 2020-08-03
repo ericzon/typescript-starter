@@ -1,0 +1,156 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "As a user, i want to test an api",
+    "line": 1,
+    "id": "as-a-user,-i-want-to-test-an-api",
+    "tags": [],
+    "uri": "src/__tests-e2e__/features/api.feature",
+    "elements": [
+      {
+        "id": "as-a-user,-i-want-to-test-an-api;get-elements-from-an-endpoint",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "get elements from an endpoint",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I make a request to the \"/Patient\" endpoint",
+            "match": {
+              "location": "src/__tests-e2e__/step_definitions/api.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I get the results",
+            "match": {
+              "location": "src/__tests-e2e__/step_definitions/api.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "As a user, i want to divide two numbers",
+    "line": 1,
+    "id": "as-a-user,-i-want-to-divide-two-numbers",
+    "tags": [],
+    "uri": "src/__tests-e2e__/features/divide.feature",
+    "elements": [
+      {
+        "id": "as-a-user,-i-want-to-divide-two-numbers;happy-path:-divide-two-numbers",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Happy Path: Divide two numbers",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a calculator",
+            "match": {
+              "location": "src/__tests-e2e__/step_definitions/divide.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I divide 8 by 2",
+            "match": {
+              "location": "src/__tests-e2e__/step_definitions/divide.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the result is 4",
+            "match": {
+              "location": "src/__tests-e2e__/step_definitions/divide.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "as-a-user,-i-want-to-divide-two-numbers;failing-test---divide-two-numbers",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Failing test - Divide two numbers",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "a calculator",
+            "match": {
+              "location": "src/__tests-e2e__/step_definitions/divide.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I divide 8 by 2",
+            "match": {
+              "location": "src/__tests-e2e__/step_definitions/divide.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the result isn't 5",
+            "match": {
+              "location": "src/__tests-e2e__/step_definitions/divide.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
