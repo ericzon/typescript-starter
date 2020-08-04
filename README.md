@@ -2,7 +2,7 @@
 
 ## Description
 
-My main objective on this repo is to have a clean base to start to code in Typescript.
+My main objective on this repo is to have a clean base to start to code **backend** in Typescript.
 
 Main features:
 
@@ -51,3 +51,12 @@ We're using Jest:
 ```
 npm t
 ```
+
+To run in watch mode:
+```
+npm run test:watch
+```
+
+## Updates
+
+You can check updates in [CHANGELOG](./CHANGELOG.md)

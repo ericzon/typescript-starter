@@ -14,6 +14,7 @@
     "build": "npm run clean && tsc",
     "clean": "rimraf dist",
     "test": "jest --verbose src",
+    "test:watch": "jest --watch",
     "coverage": "jest --collect-coverage --verbose src",
     "release": "standard-version",
     "secrets": "git secrets --scan"
