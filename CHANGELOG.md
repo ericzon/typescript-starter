@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/ericzon/typescript-starter/compare/v0.0.3...v0.0.4) (2020-08-04)
+
+
+### Features
+
+* add example of new private specification for private members in js ([e0a0f8d](https://github.com/ericzon/typescript-starter/commit/e0a0f8d3cf864de33dfdcf3f5c31fd212b6b9214))
+* add test watch script ([7123589](https://github.com/ericzon/typescript-starter/commit/712358925ce97453f015ec7db24a644dc3c1283e))
+
+
+### Bug Fixes
+
+* remove typo in template ([4ec8079](https://github.com/ericzon/typescript-starter/commit/4ec80794ca5656ad5a53d497f86f753d8386aa80))
+* update file paths of prettier & eslint ([e35f811](https://github.com/ericzon/typescript-starter/commit/e35f811288168241b244844b68378067902cb88f))
+
 ### [0.0.3](https://github.com/ericzon/typescript-starter/compare/v0.0.1...v0.0.3) (2020-07-28)
 
 ### Features
