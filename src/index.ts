@@ -9,7 +9,7 @@ const getRandomEvenOdd = () => new Date().getTime() % 2 === 0;
   const weather = HelloClass.getWeather();
   const finalWeather = weather ?? 'no idea about the weather';
 
-  console.log(`Optional chaining example. current weather: ${finalWeather}`);
+  console.log(`Nullish coalescing example. current weather: ${finalWeather}`);
 
   console.log(HelloClass.fact(5));
 
@@ -22,7 +22,5 @@ const getRandomEvenOdd = () => new Date().getTime() % 2 === 0;
         : {}),
     },
   };
-  console.log(
-    `Nullish coalescing operator example. dummyObj: ${dummyObj?.level1?.level2}`
-  );
+  console.log(`Optional chaining operator example. dummyObj: ${dummyObj?.level1?.level2}`);
 })();

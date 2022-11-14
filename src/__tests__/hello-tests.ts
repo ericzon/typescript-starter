@@ -11,9 +11,7 @@ describe('Hello tests', () => {
   it('should say hello with date', () => {
     const mockedDate = new Date(1595916364428);
 
-    const spy = jest
-      .spyOn(global, 'Date')
-      .mockImplementation(() => (mockedDate as unknown) as string);
+    const spy = jest.spyOn(global, 'Date').mockImplementation(() => mockedDate);
     const response = helloInstance.sayHello();
 
     expect(response).toBe(`Hello on ${mockedDate} !`);
